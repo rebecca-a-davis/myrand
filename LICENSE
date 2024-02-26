@@ -2,7 +2,4 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
-
-License terms copied from:
-Miller, A., Svistunov M., Doleželová, M., et. al. (2023). RPM Packaging Guide. GitHub. Retrieved on February 26, 2024 from https://rpm-packaging-guide.github.io/#preparing-source-code-for-packaging
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
