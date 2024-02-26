@@ -1,3 +1,5 @@
-The myrand program will generate a given number of random integers between the minimum and maximum integer value.  It also provides options for formatting the output in a given number of columns with a given width.  The default output will be in a "raw" python list, though.
+The myrand program will generate a given number of random integers between the minimum and maximum integer value.
+It also provides options for formatting the output in a given number of columns with a given width.  The default
+output will be in a "raw" python list, though.
 
 For usage information, see the myrand manpage (man myrand).
