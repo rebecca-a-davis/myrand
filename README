@@ -1,5 +1,43 @@
 The myrand program will generate a given number of random integers between the minimum and maximum integer value.
 It also provides options for formatting the output in a given number of columns with a given width.  The default
-output will be in a "raw" python list, though.
+output iformat is a "raw" python list.
 
-For usage information, see the myrand manpage (man myrand).
+usage: myrand [-h] [-p] [-c COLS] [-w COLWIDTH] [NUM]
+
+Generates a given number of random integers
+
+positional arguments:
+  NUM                   Number of random integers to generate (default 1)
+
+options:
+  -h, --help            show this help message and exit
+  -p, --pretty          Whether or not to format the output nicely (default is in the form of a raw list)
+  -c COLS, --cols COLS  Number of columns to print integers in (default 5); does nothing without '-p/--pretty'
+  -w COLWIDTH, --width COLWIDTH
+                        Width, in characters, of each column (default 25); does nothing without '-p/--pretty'
+
+For the same usage information in an easier-to-access format, see also the myrand manpage (man myrand) or the help message (myrand --help).
+
+Examples:
+
+No arguments:
+$ myrand
+[-4965567605274702515]
+
+Positional argument only:
+$ myrand 10
+[-3455021943718364147, 3247758962501842112, -4169947847819904078, 39811440161366952, 4068365297453658368, -7847236652286985994, 3199413979441407835, -7897449260931164651, -7589346134723979315, -923745017696927328]
+
+Default formatting options:
+$ myrand 10 --pretty
+-1675956146624996007      -1083762241367202938      7827925830668384373       1135232582864029426       605590677080816688        
+-3516962365814517167      -1235721415709250742      4157141830221949235       4076704895634711517       -1746952177392031256 
+
+Custom formatting options:
+$ myrand 15 --pretty --cols 3 --width 40
+-9179447013463994870                     6458065669148278268                      -1759311305289233803                     
+-5612110752658369035                     5094539616994615891                      -911107210483309093                      
+2259853907555282310                      -2854770596061627720                     5078184647661858332                      
+-789138738006717830                      -8597374839910776054                     -303581416013321854                      
+1523891851763605109                      -490743324706965439                      8900403195012308793                 
+
